@@ -1,0 +1,36 @@
+@font-face {
+  font-family: AvenirLTStd-Book;
+  src: url("../public/fonts/AvenirLTStd-Book.woff") format("woff");
+  font-display: swap;
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    padding:0.5% 0;
+    font-family: AvenirLTStd-Book;
+  }
+  .cont{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .picture {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    opacity: 0;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 11%;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 992px) {
+    .cont {
+      width:100%;
+      justify-content: space-evenly;
+    }
+  }
+  
