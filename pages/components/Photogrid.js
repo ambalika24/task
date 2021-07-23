@@ -2,15 +2,16 @@
 import React from 'react';
 import styles from '../../styles/PhotoGrid.module.css';
 
-function PhotoGrid() {
+function PhotoGrid(props) {
     return (
+        
         <div className={styles.GridContainer}>
                 <div className={styles.Heading}>Candid Feeds</div>
                 <div className={styles.Container1}>
-                    <div className={`${styles.Item1} ${styles.Cont1Item}`}><div className={styles.Test1}>Why are Animals Slaughtered?</div></div>
-                    <div className={`${styles.Item2} ${styles.Cont1Item}`}><div className={styles.Test2}>Which type of skin are you having?</div></div>
-                    <div className={`${styles.Item3} ${styles.Cont1Item}`}><div className={styles.Test3}>Honest Problems with New Agriculture Reform Bill</div></div>
-                    <div className={`${styles.Item4} ${styles.Cont1Item}`}><div className={styles.Test4}>How to become Savage?</div></div>
+                    <div  className={`${styles.Item1} ${styles.Cont1Item}`} style={{ backgroundImage: `url("${props.array[0].image}")`}}><div className={styles.Test1}>{props.array[0].title}</div></div>
+                    <div className={`${styles.Item2} ${styles.Cont1Item}`}><div className={styles.Test2}>{props.array[1].title}</div></div>
+                    <div className={`${styles.Item3} ${styles.Cont1Item}`}><div className={styles.Test3}>{props.array[2].title}</div></div>
+                    <div className={`${styles.Item4} ${styles.Cont1Item}`}><div className={styles.Test4}>{props.array[3].title}</div></div>
                 </div>
                 <div className={styles.Heading2}>Candid for you</div>
                 <div className={styles.Container2}>
